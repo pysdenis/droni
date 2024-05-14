@@ -10,7 +10,4 @@ onMount(async () => {
 });
 </script>
 
-<h1>Articles</h1>
-
-<!-- {#each articles as article} -->
-<!-- {/each} -->
+<h1 class="">Articles</h1>

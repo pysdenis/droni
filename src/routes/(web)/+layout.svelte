@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '$lib/assets/css/main.css';
-	import logo from '$lib/assets/images/logo.png';
+	import logo from '$lib/assets/images/logo.svg';
 </script>
 
 <header class="flex items-center gap-3 justify-center py-3 bg-primary">
@@ -8,7 +8,6 @@
 	<nav class="text-white">
 		<a href="/">Home</a>
 		<a href="/about">About</a>
-		<a href="/admin">ADMIN</a>
 	</nav>
 </header>
 <main class="container">
