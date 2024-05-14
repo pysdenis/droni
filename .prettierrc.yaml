@@ -1,0 +1,24 @@
+# prettier v3.0
+plugins:
+  - prettier-plugin-svelte
+  - prettier-plugin-tailwindcss
+  - "@trivago/prettier-plugin-sort-imports"
+
+# prettier-plugin-sort-imports v4.2
+importOrder:
+  - "^node:"
+  - "<THIRD_PARTY_MODULES>"
+  - "^[./]+/core/(.*)$"
+  - "^@core/(.*)$"
+  - "^$(.*)/(.*)$"
+  - "^[.][.]/"
+  - "^[.]/"
+importOrderSortSpecifiers: true
+importOrderParserPlugins:
+  - typescript
+  - svelte
+  - importAssertions
+overrides:
+  - files: "*.svelte"
+    options:
+      parser: svelte
