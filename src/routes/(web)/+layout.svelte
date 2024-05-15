@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '$lib/assets/css/main.css';
 	import logo from '$lib/assets/images/logo.svg';
+	import globo from '$lib/assets/images/globo.png';
 	import heroVideo from '$lib/assets/video/hero.mp4';
 </script>
 
@@ -15,8 +16,7 @@
 				loop
 				muted
 				playsinline
-				class="absolute inset-0 h-screen max-h-[750px] w-screen object-cover"
-			>
+				class="absolute inset-0 h-screen max-h-[750px] w-screen object-cover">
 				<source src={heroVideo} type="video/mp4" />
 			</video>
 			<div class="absolute h-full w-full from-black bg-gradient-to-b to-transparent via-transparent lg:max-h-[100%]">
@@ -33,5 +33,5 @@
 	<slot />
 </main>
 <footer class="flex items-center justify-center bg-secondary">
-	<p>footer</p>
+	<img src="{globo}" alt="globodain logo">
 </footer>
