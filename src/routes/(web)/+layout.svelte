@@ -3,12 +3,6 @@
 	import logo from '$lib/assets/images/logo.svg';
 	import globo from '$lib/assets/images/globo.svg';
 	import heroVideo from '$lib/assets/video/hero.mp4';
-	import { browser } from '$app/environment';
-	import '$lib/i18n';
-	import { locale, waitLocale } from 'svelte-i18n';
-	import { onMount } from 'svelte';
-	import { storable } from '$lib/scripts/storable';
-
 </script>
 
 <header>

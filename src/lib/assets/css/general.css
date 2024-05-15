@@ -10,11 +10,11 @@ h2,
 h3,
 h4,
 h5 {
-	@apply font-poppins mx-auto mb-3 leading-[1.25] lg:mb-4;
+	@apply font-poppins text-text mx-auto mb-3 leading-[1.25] lg:mb-4;
 }
 
 h1 {
-	@apply font-poppins mx-auto mb-3 pt-8 text-5xl leading-[1.25] lg:mb-4 lg:pt-8 lg:text-6xl;
+	@apply font-poppins text-text mx-auto mb-3 pt-8 text-5xl leading-[1.25] lg:mb-4 lg:pt-8 lg:text-6xl;
 }
 
 h1 {
@@ -48,10 +48,6 @@ a {
 section,
 .section {
 	@apply mb-10 lg:mb-[3.75rem];
-}
-
-video::-webkit-media-controls-fullscreen-button {
-	@apply hidden;
 }
 /*
 ** CKEditor

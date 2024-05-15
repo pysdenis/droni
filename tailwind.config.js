@@ -43,7 +43,7 @@ export default {
 					DEFAULT: '#b8b8ff'
 				},
 				text: {
-					DEFAULT: '#001219'
+					DEFAULT: '#010205'
 				}
 			},
 			boxShadow: {
