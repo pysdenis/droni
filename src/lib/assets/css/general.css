@@ -50,6 +50,9 @@ section,
 	@apply mb-10 lg:mb-[3.75rem];
 }
 
+video::-webkit-media-controls-fullscreen-button {
+	@apply hidden;
+}
 /*
 ** CKEditor
 */ /* uncomment this block to apply the styles to the CKEditor content */ /*
