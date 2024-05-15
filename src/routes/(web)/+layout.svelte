@@ -33,5 +33,5 @@
 	<slot />
 </main>
 <footer class="flex items-center justify-center bg-secondary">
-	<img src="{globo}" alt="globodain logo">
+	<img src="{globo}" alt="globodain logo" class="h-4">
 </footer>
