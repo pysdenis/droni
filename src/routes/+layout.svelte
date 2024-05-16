@@ -22,7 +22,7 @@
 				loop
 				muted
 				playsinline
-				class="absolute inset-0 h-screen max-h-[100dvh] w-screen object-cover"
+				class="absolute inset-0 max-h-[100dvh] w-full object-cover"
 			>
 				<source src={heroVideo} type="video/mp4" />
 			</video>

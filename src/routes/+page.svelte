@@ -1,23 +1,29 @@
 <script lang="ts">
 	import aboutus from "$lib/assets/video/aboutus.mp4";
+	import Icon from "$lib/components/Icon.svelte";
+	import arrow from "$lib/assets/images/arrow.svg?raw";
 
 	const texts = [
-	{
-		heading: "Easy Access",
-		text: "We've made it super simple for emergency teams to get to the drones they need. No fuss, no delays. Just quick and secure access whenever they're needed.",
-	},
-	{
-		heading: "Speedy Response",
-		text: "Time is critical in emergencies. Our solution cuts down the time it takes for help to arrive after getting the call. That means we're on the scene faster, ready to tackle whatever comes our way.",
-	},
-	{
-		heading: "Clearer Views",
-		text: "With our drones, responders can see exactly what's happening up close. That means they can figure out how urgent things are and decide on the best plan of action in a snap.",
-	},
-	{
-		heading: "Always Ready",
-		text: "Our system works 24/7, no pilot needed. That means help is always just a click away, whether it's day or night.",
-	},
+		{
+			heading: "Easy Access",
+			text: "We've made it super simple for emergency teams to get to the drones they need. No fuss, no delays. Just quick and secure access whenever they're needed.",
+			show: false,
+		},
+		{
+			heading: "Speedy Response",
+			text: "Time is critical in emergencies. Our solution cuts down the time it takes for help to arrive after getting the call. That means we're on the scene faster, ready to tackle whatever comes our way.",
+			show: false,
+		},
+		{
+			heading: "Clearer Views",
+			text: "With our drones, responders can see exactly what's happening up close. That means they can figure out how urgent things are and decide on the best plan of action in a snap.",
+			show: false,
+		},
+		{
+			heading: "Always Ready",
+			text: "Our system works 24/7, no pilot needed. That means help is always just a click away, whether it's day or night.",
+			show: false,
+		},
 	]
 </script>
 
@@ -44,11 +50,11 @@
 	</div>
 </section>
 
-<section class="from-white via-[#889dabe3] bg-gradient-to-b to-[#657e90] mb-0">
+<section class="bg-black mb-0">
 	<div class="container h-56 pt-16">
-		<h2 class="font-semibold text-center mb-8">What is it?</h2>
+		<h2 class="font-semibold text-center text-white mb-8">What is it?</h2>
 			<div class="flex">
-				<p class="text-md mt-3  text-justify">Get ready for a game-changer in emergency services! Our Drone Hangar Access Solution is here to make a big difference for police, firefighters, and other state agencies. It's all about using resources smarter and getting help where it's needed faster.</p>
+				<p class="text-md mt-3 text-white text-center">Get ready for a game-changer in emergency services! Our Drone Hangar Access Solution is here to make a big difference for police, firefighters, and other state agencies. It's all about using resources smarter and getting help where it's needed faster.</p>
 			</div>
 	</div>
 	<model-viewer
@@ -63,21 +69,24 @@
 	></model-viewer>
 </section>
 
-<section class="from-[#657e90] bg-gradient-to-b to-black mb-0">
-	<div class="container text-white pt-16">
-		<h2 class="font-semibold text-white text-center mb-8">Benefits</h2>
-		<div class="flex gap-4">
+<section class="bg-black mb-0">
+	<div class="container text-white pt-16 justify-center flex flex-col">
+		<h2 class="font-semibold text-center mb-8 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Benefits</h2>
+		<div class="md:grid flex flex-col grid-cols-4 gap-6">
 			{#each texts as text}
-				<span class="" on:click={}>
-					{text.heading}
-					<p class:hidden={} class="text-md mt-3 text-white">{text.text}</p>
+				<span class="flex justify-start flex-col items-center">
+					<button class="font-semibold text-md flex gap-4 items-center tracking-wider" on:click={() => text.show = !text.show}>
+						{text.heading}
+						<Icon icon={arrow} class="text-white w-4 transform transition-all duration-300 rotate-180 {text.show ? '!rotate-90' : ''}" />
+					</button>
+					<p class:hidden={!text.show} class="text-md text-center mt-3 text-white">{text.text}</p>
 				</span>
 			{/each}
 		</div>
 	</div>
 </section>
 
-<section class="bg-black pb-20">
+<section class="to-white bg-gradient-to-b from-black via-[#657e90] pb-20">
 	<div class="container pt-16">
 		<div class="flex w-full justify-center">
 			<h2 class="font-semibold text-center mb-8 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Lorem ipsum</h2>
