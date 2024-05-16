@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '$lib/assets/css/main.css';
 	import logo from '$lib/assets/images/logo.svg';
-	import globo from '$lib/assets/images/globo.png';
+	import globo from '$lib/assets/images/globo.svg';
 	import heroVideo from '$lib/assets/video/hero.mp4';
 </script>
 
@@ -35,6 +35,6 @@
 <main class="container mt-[100dvh]">
 	<slot />
 </main>
-<footer class="flex items-center justify-center bg-secondary">
-	<img src="{globo}" alt="globodain logo" class="h-4">
+<footer class="flex items-center justify-center p-5 bg-secondary">
+	<img src="{globo}" alt="globodain logo" class="h-16">
 </footer>
