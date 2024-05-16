@@ -1,7 +1,13 @@
 <script lang="ts">
-	import aboutus from '$lib/assets/video/aboutus.mp4';
-
+	import aboutus from "$lib/assets/video/aboutus.mp4";
 </script>
+
+<svelte:head>
+	<script
+		type="module"
+		src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+	></script>
+</svelte:head>
 
 <section class="mt-8 container">
 	<h1 class="font-semibold text-center mb-8">About Skynova</h1>
@@ -48,3 +54,13 @@
 	</div>
 </section>
 
+<model-viewer
+	class="h-[30rem] w-full bg-transparent"
+	alt="L"
+	src="https://fbgbrrgtvgretv.000webhostapp.com/drone_home.glb"
+	poster=""
+	shadow-intensity="1"
+	camera-controls
+	touch-action="pan-y"
+	disable-zoom
+></model-viewer>
