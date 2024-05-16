@@ -5,7 +5,6 @@ import { imagetools } from 'vite-imagetools';
 export default defineConfig(() => {
 	return {
 		plugins: [
-			// ckeditor5({ theme: require.resolve("@ckeditor/ckeditor5-theme-lark") }),
 			imagetools({
 				defaultDirectives: (url) => {
 					const searchParams = new URLSearchParams(url.searchParams);

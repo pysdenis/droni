@@ -3,10 +3,14 @@
 	import logo from '$lib/assets/images/logo.svg';
 	import globo from '$lib/assets/images/globo.svg';
 	import heroVideo from '$lib/assets/video/hero.mp4';
+
+	let windowScrollY = 0;
 </script>
 
+<svelte:window bind:scrollY={windowScrollY} />
+
 <header>
-	<div class="absolute z-50 w-full flex items-center gap-3 justify-center py-3 bg-transparent">
+	<div class:shadow-lg={windowScrollY > 0} class:!bg-black={windowScrollY > 0} class="fixed left-0 right-0 top-0 pb-3 pt-3 md:pb-14 md:pt-6 xl:pb-6 z-50 w-full flex items-center gap-3 justify-center py-3 bg-transparent">
 		<a href="/">
 			<img src={logo} alt="Logo of the corporation" class="h-14" />
 		</a>
@@ -32,9 +36,11 @@
 		</div>
 	</div>
 </header>
-<main class="container mt-[100dvh]">
+
+<main class="mt-[100dvh]">
 	<slot />
 </main>
+
 <footer class="flex items-center justify-center p-5 bg-secondary">
 	<img src="{globo}" alt="globodain logo" class="h-16">
 </footer>
