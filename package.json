@@ -34,7 +34,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"threlte": "^3.13.1",
 		"vite-imagetools": "^7.0.1"
 	}
 }
