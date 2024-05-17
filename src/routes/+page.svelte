@@ -4,6 +4,9 @@
 	import arrow from "$lib/assets/images/arrow.svg?raw";
 	import StaticPicture from "$lib/components/Picture/StaticPicture.svelte";
 	import image from "$lib/assets/images/flytbase.png";
+	import phone from "$lib/assets/images/phone.svg?raw";
+	import location from "$lib/assets/images/location.svg?raw";
+	import mailBox from "$lib/assets/images/email.svg?raw";
 	const texts = [
 		{
 			heading: "Easy Access",
@@ -108,8 +111,23 @@
 <section>
 	<div class="container pt-16">
 		<h2 class="font-semibold text-center text-black mb-8">Contact</h2>
-		<div class="flex">
-			<p class="text-md mt-3 text-black text-justify">Contact</p>
+		<div class="w-full mt-4 flex justify-center	">
+			<!-- svelte-ignore a11y-missing-attribute -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.5349255630988!2d-5.986954048311329!3d37.382808888216076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2520bd605507d981%3A0x6778fcf5968953de!2sGlobodain!5e0!3m2!1ses!2ses!4v1715933332232!5m2!1ses!2ses" width="600" height="450" style="width:100%; border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<div class=" ml-4 flex gap-3 flex-col">
+				<a href="mailto:example@seznam.cz" class="flex gap-2 items-center">
+					<Icon icon={mailBox} class="w-6 text-black"/>
+					example@seznam.cz
+				</a>
+				<a href="tel:+34691179497" class="flex gap-2 items-center">
+					<Icon icon={phone} class="w-6 text-black"/>
+					+34 691 17 94 97
+				</a>
+				<a href="https://maps.app.goo.gl/3YGxaCa6kykpSueC9" target="_blank" class="flex gap-2 items-center">
+					<Icon icon={location} class="w-6 text-black"/>
+					C. Bartolomé de Medina, 1, 41004 Sevilla
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
