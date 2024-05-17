@@ -40,7 +40,7 @@ export default {
 					DEFAULT: '#f2f2f2'
 				},
 				accent: {
-					DEFAULT: '#b8b8ff'
+					DEFAULT: '#06191d'
 				},
 				text: {
 					DEFAULT: '#010205'
