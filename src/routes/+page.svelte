@@ -71,7 +71,7 @@
 </section>
 
 <section class="bg-black mb-0">
-	<div class="container text-white pt-16 justify-center flex flex-col">
+	<div class="container text-white pt-2 justify-center flex flex-col">
 		<h2 class="font-semibold text-center mb-8 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Benefits</h2>
 		<div class="md:grid flex flex-col grid-cols-4 gap-6">
 			{#each texts as text}
