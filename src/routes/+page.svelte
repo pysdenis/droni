@@ -2,7 +2,8 @@
 	import aboutus from "$lib/assets/video/aboutus.mp4";
 	import Icon from "$lib/components/Icon.svelte";
 	import arrow from "$lib/assets/images/arrow.svg?raw";
-
+	import StaticPicture from "$lib/components/Picture/StaticPicture.svelte";
+	import image from "$lib/assets/images/flytbase.png";
 	const texts = [
 		{
 			heading: "Easy Access",
@@ -87,12 +88,32 @@
 </section>
 
 <section class="to-white bg-gradient-to-b from-black via-[#657e90] pb-20">
-	<div class="container pt-16">
+	<div class="container pt-20">
 		<div class="flex w-full justify-center">
-			<h2 class="font-semibold text-center mb-8 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Lorem ipsum</h2>
+			<h2 class="font-semibold text-center text-white mb-8">Flytbase</h2>
 		</div>
 		<div class="flex">
-			<p class="text-md mt-3 text-white text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet tincidunt sem. Duis fringilla quam vitae sem varius porta. Vestibulum a pretium urna, in porta lacus. Suspendisse porttitor eros nunc, sit amet pulvinar mauris aliquet et. Nam non odio nunc. Vivamus felis erat, finibus eu sagittis non, consequat vel nulla. Nunc rhoncus condimentum tellus in laoreet. Curabitur porta gravida posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus. In sagittis cursus est, ut egestas ipsum accumsan vel.</p>
+			<p class="text-md mt-3 text-white text-justify">At Skynova, we're excited to embark on a groundbreaking journey to conceptualize, create, and monitor the next generation of drone deployment using the Flytbase platform.</p>
+		</div>
+		<StaticPicture width={500} height={500} class="w-full flex justify-center mt-4" image={image} alt="flytbase" />
+		<div class="flex">
+			<p class="text-md mt-3 text-black text-justify">Our strategy is simple yet powerful: collaborate and innovate. By partnering with Flytbase, we harness their cutting-edge digital solutions while we handle the physical deployment. This synergy ensures seamless integration and unmatched efficiency in drone operations.</p>
+		</div>
+		<div class="flex">
+			<p class="text-md mt-3 text-black text-justify">Together, we'll redefine the future of drone technology. Let's elevate your capabilities with the perfect blend of physical expertise and digital excellence.
+
+			</p>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container pt-16">
+		<h2 class="font-semibold text-center text-black mb-8">Contact</h2>
+		<div class="flex">
+			<p class="text-md mt-3 text-black text-justify">Contact
+
+			</p>
 		</div>
 	</div>
 </section>
