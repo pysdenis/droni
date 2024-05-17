@@ -35,8 +35,8 @@
 	></script>
 </svelte:head>
 
-<section class="mt-8 container">
-	<h1 class="font-semibold text-center mb-8">About Skynova</h1>
+<section class="mt-12 mb-20 container">
+	<h1 class="font-semibold text-center mb-10">About Skynova</h1>
 	<div class="flex gap-12 flex-col md:grid md:grid-cols-2 items-center">
 		<p class="text-md mt-3 text-justify">Skynova represents an innovative system designed for the deployment of unmanned aerial vehicles (UAVs) during emergency scenarios. In the event of a crisis, these drones are activated from strategically positioned rooftop housings, facilitating the timely provision of real-time information to emergency services. Such a dynamic approach empowers first responders to make informed decisions while en route, optimizing their strategies for effectively addressing the emergency at hand.</p>
 		<!-- svelte-ignore a11y-media-has-caption -->
@@ -93,16 +93,14 @@
 			<h2 class="font-semibold text-center text-white mb-8">Flytbase</h2>
 		</div>
 		<div class="flex">
-			<p class="text-md mt-3 text-white text-justify">At Skynova, we're excited to embark on a groundbreaking journey to conceptualize, create, and monitor the next generation of drone deployment using the Flytbase platform.</p>
+			<p class="text-md mt-3 text-white text-center mb-3 px-5">At Skynova, we're excited to embark on a groundbreaking journey to conceptualize, create, and monitor the next generation of drone deployment using the Flytbase platform.</p>
 		</div>
-		<StaticPicture width={500} height={500} class="w-full flex justify-center mt-4" image={image} alt="flytbase" />
-		<div class="flex">
-			<p class="text-md mt-3 text-black text-justify">Our strategy is simple yet powerful: collaborate and innovate. By partnering with Flytbase, we harness their cutting-edge digital solutions while we handle the physical deployment. This synergy ensures seamless integration and unmatched efficiency in drone operations.</p>
-		</div>
-		<div class="flex">
-			<p class="text-md mt-3 text-black text-justify">Together, we'll redefine the future of drone technology. Let's elevate your capabilities with the perfect blend of physical expertise and digital excellence.
-
-			</p>
+		<div class="md:grid flex flex-col md:grid-cols-2">
+			<StaticPicture width={500} height={500} class="w-full flex justify-center mt-4" image={image} alt="flytbase" />
+			<div class="flex flex-col pt-6 gap-4">
+				<p class="text-md mt-3 text-black text-justify">Our strategy is simple yet powerful: collaborate and innovate. By partnering with Flytbase, we harness their cutting-edge digital solutions while we handle the physical deployment. This synergy ensures seamless integration and unmatched efficiency in drone operations.</p>
+				<p class="text-md mt-3 text-black text-justify">Together, we'll redefine the future of drone technology. Let's elevate your capabilities with the perfect blend of physical expertise and digital excellence.</p>
+			</div>
 		</div>
 	</div>
 </section>
@@ -111,9 +109,7 @@
 	<div class="container pt-16">
 		<h2 class="font-semibold text-center text-black mb-8">Contact</h2>
 		<div class="flex">
-			<p class="text-md mt-3 text-black text-justify">Contact
-
-			</p>
+			<p class="text-md mt-3 text-black text-justify">Contact</p>
 		</div>
 	</div>
 </section>

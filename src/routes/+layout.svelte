@@ -3,7 +3,7 @@
 	import logo from '$lib/assets/images/logo.svg';
 	import globo from '$lib/assets/images/globo.svg';
 	import heroVideo from '$lib/assets/video/hero.mp4';
-    import StaticPicture from '$lib/components/Picture/StaticPicture.svelte';
+	import StaticPicture from '$lib/components/Picture/StaticPicture.svelte';
 
 	let windowScrollY = 0;
 </script>
@@ -17,28 +17,22 @@
 		</a>
 	</div>
 	<div id="hero" class="relative">
-		<div class="absolute h-[100dvh] w-full overflow-hidden">
+		<div class="absolute max-md:max-h-[60dvh] h-[100dvh] w-full overflow-hidden">
 			<video
 				autoplay
 				loop
 				muted
 				playsinline
-				class="absolute inset-0 max-h-[100dvh] w-full object-cover"
+				class="absolute inset-0 max-h-[60dvh] h-full md:max-h-[100dvh] w-full object-cover"
 			>
 				<source src={heroVideo} type="video/mp4" />
 			</video>
-			<div class="absolute h-full w-full from-black bg-gradient-to-b to-transparent via-transparent lg:max-h-[100%]">
-				<div class="relative h-full w-full">
-					<div
-						class="to-primary-700 absolute bottom-0 h-[467px] w-full bg-gradient-to-b from-transparent lg:h-[288px]"
-					></div>
-				</div>
-			</div>
+			<div class="absolute max-h-[60dvh] h-full md:max-h-[100dvh] w-full from-black bg-gradient-to-b to-transparent via-transparent lg:max-h-[100%]"></div>
 		</div>
 	</div>
 </header>
 
-<main class="mt-[100dvh]">
+<main class="mt-[29rem] md:mt-[100dvh]">
 	<slot />
 </main>
 
