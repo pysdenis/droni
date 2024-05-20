@@ -7,6 +7,8 @@
 	import phone from "$lib/assets/images/phone.svg?raw";
 	import location from "$lib/assets/images/location.svg?raw";
 	import mailBox from "$lib/assets/images/email.svg?raw";
+	import droneHome from "$lib/assets/images/dron-home.png";
+
 	const texts = [
 		{
 			heading: "Efficiency Boost",
@@ -77,7 +79,7 @@
 
 <section class="bg-accent mb-0">
 	<div class="container text-white pt-2 justify-center flex flex-col">
-		<h2 class="font-semibold text-center mb-8 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Why Choose Skynova?</h2>
+		<h2 class="font-semibold text-center mb-10 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Why Choose Skynova?</h2>
 		<div class="md:grid flex flex-col grid-cols-4 gap-6">
 			{#each texts as text}
 				<span class="flex justify-start flex-col items-center">
@@ -120,13 +122,13 @@
 			<div class="w-full flex justify-center">
 				<ol class="text-justify md:w-[75%] flex flex-col gap-2 justify-between list-decimal">
 					{#each [
-						"Conceptualizing: Planning business models, conducting market research, and laying out the project.",
-						"Parametrization: Defining design parameters, requirements, and labor division.",
-						"Design: Creating layout and base models, focusing on user interface and experience.",
-						"First Sales: Introducing our product to early adopters and gaining initial market traction.",
-						"Upgrading: Validating, improving, and scaling our product for broader use."
+						"<span class='font-semibold'>Conceptualizing:</span> Planning business models, conducting market research, and laying out the project.",
+						"<span class='font-semibold'>Parametrization:</span> Defining design parameters, requirements, and labor division.",
+						"<span class='font-semibold'>Design:</span> Creating layout and base models, focusing on user interface and experience.",
+						"<span class='font-semibold'>First Sales:</span> Introducing our product to early adopters and gaining initial market traction.",
+						"<span class='font-semibold'>Upgrading:</span> Validating, improving, and scaling our product for broader use."
 					] as step}
-						<li>{step}</li>
+						<li>{@html step}</li>
 					{/each}
 				</ol>
 			</div>
@@ -142,8 +144,9 @@
 				Take the Next Step with Skynova
 			</h2>
 		</div>
-		<div class="flex flex-col justify-center">
-			<p class="text-md mt-3 text-center mb-3 px-5">At Skynova, we’re leading the way in drone technology to make emergency responses faster, safer, and more efficient. Discover how our innovative solutions can revolutionize public safety in your community.</p>
+		<div class="flex flex-col gap-3 justify-center">
+			<p class="text-md mt-3 text-center px-5">At Skynova, we’re leading the way in drone technology to make emergency responses faster, safer, and more efficient. Discover how our innovative solutions can revolutionize public safety in your community.</p>
+			<StaticPicture width={500} height={500} class="w-full my-4" imgClass="w-full" image={droneHome} alt="flytbase" />
 			<span class="text-md px-5 text-center font-semibold">Ready to transform your emergency response capabilities? Contact us today to learn more and join the future of public safety with Skynova.</span>
 		</div>
 	</div>
@@ -152,19 +155,19 @@
 <section>
 	<div class="container">
 		<h2 class="font-semibold text-center text-black mb-8">Contact</h2>
-		<div class="w-full mt-4 flex md:flex-row flex-col gap-4 justify-center	">
+		<div class="w-full mt-4 flex flex-col gap-5 justify-center	">
 			<!-- svelte-ignore a11y-missing-attribute -->
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.5349255630988!2d-5.986954048311329!3d37.382808888216076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2520bd605507d981%3A0x6778fcf5968953de!2sGlobodain!5e0!3m2!1ses!2ses!4v1715933332232!5m2!1ses!2ses" width="600" height="450" style="width:100%; border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			<div class="flex gap-3 items-center md:items-start flex-col">
-				<a href="mailto:example@seznam.cz" class="flex gap-2 items-center">
+			<div class="flex md:justify-between md:flex-row flex-col gap-3">
+				<a href="mailto:example@seznam.cz" class="flex hover:text-blue-700 transition-all duration-300 gap-2 items-center">
 					<Icon icon={mailBox} class="w-6 text-black"/>
 					example@seznam.cz
 				</a>
-				<a href="tel:+34691179497" class="flex gap-2 items-center">
+				<a href="tel:+34691179497" class="flex hover:text-blue-700 transition-all duration-300 gap-2 items-center">
 					<Icon icon={phone} class="w-6 text-black"/>
 					+34 691 17 94 97
 				</a>
-				<a href="https://maps.app.goo.gl/3YGxaCa6kykpSueC9" target="_blank" class="flex gap-2 items-center">
+				<a href="https://maps.app.goo.gl/3YGxaCa6kykpSueC9" target="_blank" class="flex hover:text-blue-700 transition-all duration-300 gap-2 items-center">
 					<Icon icon={location} class="w-6 text-black"/>
 					C. Bartolomé de Medina, 1, 41004 Sevilla
 				</a>
