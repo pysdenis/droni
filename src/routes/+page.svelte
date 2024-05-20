@@ -9,23 +9,23 @@
 	import mailBox from "$lib/assets/images/email.svg?raw";
 	const texts = [
 		{
-			heading: "Easy Access",
-			text: "We've made it super simple for emergency teams to get to the drones they need. No fuss, no delays. Just quick and secure access whenever they're needed.",
+			heading: "Efficient Resource Use",
+			text: "Maximize the efficiency of public service resources, ensuring they're always ready when needed.",
 			show: false,
 		},
 		{
-			heading: "Speedy Response",
-			text: "Time is critical in emergencies. Our solution cuts down the time it takes for help to arrive after getting the call. That means we're on the scene faster, ready to tackle whatever comes our way.",
+			heading: "Faster Response Times",
+			text: "Reduce the time from emergency notification to the arrival of first responders, potentially saving lives.",
 			show: false,
 		},
 		{
-			heading: "Clearer Views",
-			text: "With our drones, responders can see exactly what's happening up close. That means they can figure out how urgent things are and decide on the best plan of action in a snap.",
+			heading: "Detailed Insights",
+			text: "Get close-up views of emergencies, helping to assess the situation quickly and accurately.",
 			show: false,
 		},
 		{
-			heading: "Always Ready",
-			text: "Our system works 24/7, no pilot needed. That means help is always just a click away, whether it's day or night.",
+			heading: "24/7 Availability",
+			text: "Our drones are ready to assist around the clock, no pilot required.",
 			show: false,
 		},
 	]
@@ -39,9 +39,9 @@
 </svelte:head>
 
 <section class="mt-12 mb-20 container">
-	<h1 class="font-semibold text-center mb-10">About Skynova</h1>
+	<h1 class="font-semibold text-center mb-10">Revolutionizing Emergency Response with Drones</h1>
 	<div class="flex gap-12 flex-col md:grid md:grid-cols-2 items-center">
-		<p class="text-md mt-3 text-justify">Skynova represents an innovative system designed for the deployment of unmanned aerial vehicles (UAVs) during emergency scenarios. In the event of a crisis, these drones are activated from strategically positioned rooftop housings, facilitating the timely provision of real-time information to emergency services. Such a dynamic approach empowers first responders to make informed decisions while en route, optimizing their strategies for effectively addressing the emergency at hand.</p>
+		<p class="text-md mt-3 text-justify">Welcome to Skynova! We’re transforming how police, firefighters, and other emergency services respond to crises by providing instant access to drone hangars. Our project, DRON FIRST, is designed to enhance public safety with cutting-edge drone technology.</p>
 		<!-- svelte-ignore a11y-media-has-caption -->
 		<video
 			playsinline
@@ -56,7 +56,7 @@
 
 <section class="bg-accent mb-0">
 	<div class="container h-56 pt-16">
-		<h2 class="font-semibold text-center text-white mb-8">What is it?</h2>
+		<h2 class="font-semibold text-center text-white mb-8">About Skynova</h2>
 			<div class="flex">
 				<p class="text-md mt-3 text-white text-center">Get ready for a game-changer in emergency services! Our Drone Hangar Access Solution is here to make a big difference for police, firefighters, and other state agencies. It's all about using resources smarter and getting help where it's needed faster.</p>
 			</div>
@@ -75,7 +75,7 @@
 
 <section class="bg-accent mb-0">
 	<div class="container text-white pt-2 justify-center flex flex-col">
-		<h2 class="font-semibold text-center mb-8 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Benefits</h2>
+		<h2 class="font-semibold text-center mb-8 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Why Choose Skynova?</h2>
 		<div class="md:grid flex flex-col grid-cols-4 gap-6">
 			{#each texts as text}
 				<span class="flex justify-start flex-col items-center">
@@ -93,10 +93,10 @@
 <section class="to-white bg-gradient-to-b from-accent via-[#657e90] pb-20 mb-0">
 	<div class="container pt-20">
 		<div class="flex w-full justify-center">
-			<h2 class="font-semibold text-center text-white mb-8">Flytbase</h2>
+			<h2 class="font-semibold text-center text-white mb-8">Partnering with Flytbase</h2>
 		</div>
 		<div class="flex">
-			<p class="text-md mt-3 text-white text-center mb-3 px-5">At Skynova, we're excited to embark on a groundbreaking journey to conceptualize, create, and monitor the next generation of drone deployment using the Flytbase platform.</p>
+			<p class="text-md mt-3 text-white text-center mb-3 px-5">To enhance our capabilities, we collaborate with Flytbase, a leader in digital drone solutions. This partnership allows us to combine our physical infrastructure expertise with their digital platform, ensuring a comprehensive and robust drone deployment system.</p>
 		</div>
 		<div class="md:grid flex flex-col md:grid-cols-2">
 			<StaticPicture width={500} height={500} class="w-full flex justify-center mt-4" image={image} alt="flytbase" />
@@ -104,6 +104,40 @@
 				<p class="text-md mt-3 text-black text-justify">Our strategy is simple yet powerful: collaborate and innovate. By partnering with Flytbase, we harness their cutting-edge digital solutions while we handle the physical deployment. This synergy ensures seamless integration and unmatched efficiency in drone operations.</p>
 				<p class="text-md mt-3 text-black text-justify">Together, we'll redefine the future of drone technology. Let's elevate your capabilities with the perfect blend of physical expertise and digital excellence.</p>
 			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg-white pb-20">
+	<div class="container pt-20">
+		<div class="flex w-full justify-center">
+			<h2 class="font-semibold text-center text-white mb-8">Our Development Journey</h2>
+		</div>
+		<div class="flex">
+			<p>We follow a structured path to ensure success:</p>
+			<ul>
+				{#each [
+					"Conceptualizing: Planning business models, conducting market research, and laying out the project.",
+					"Parametrization: Defining design parameters, requirements, and labor division.",
+					"Design: Creating layout and base models, focusing on user interface and experience.",
+					"First Sales: Introducing our product to early adopters and gaining initial market traction.",
+					"Upgrading: Validating, improving, and scaling our product for broader use."
+				] as step}
+					<li>{step}</li>
+				{/each}
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+<section class="bg-white pb-20">
+	<div class="container pt-20">
+		<div class="flex w-full justify-center">
+			<h2 class="font-semibold text-center mb-8">Join Us</h2>
+		</div>
+		<div class="flex">
+			<p class="text-md mt-3 text-center mb-3 px-5">At Skynova, we’re at the forefront of drone technology, making emergency responses faster, safer, and more efficient. Discover how we’re changing the future of public safety with our innovative solutions.</p>
 		</div>
 	</div>
 </section>
