@@ -7,7 +7,7 @@
 	import phone from "$lib/assets/images/phone.svg?raw";
 	import location from "$lib/assets/images/location.svg?raw";
 	import mailBox from "$lib/assets/images/email.svg?raw";
-	import droneHome from "$lib/assets/images/dron-home.png";
+	import droneHome from "$lib/assets/images/DroneModel3.png";
 
 	const texts = [
 		{
