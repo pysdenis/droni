@@ -80,7 +80,7 @@
 			{#each texts as text}
 				<span class="flex justify-start flex-col items-center">
 					<button class="font-semibold text-md flex gap-4 items-center tracking-wider" on:click={() => text.show = !text.show}>
-						{text.heading}
+						<span class="font-semibold">{text.heading}</span>
 						<Icon icon={arrow} class="text-white w-4 transform transition-all duration-300 rotate-180 {text.show ? '!rotate-90' : ''}" />
 					</button>
 					<p class:hidden={!text.show} class="text-md text-center mt-3 text-white">{text.text}</p>
