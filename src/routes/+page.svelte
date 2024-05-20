@@ -62,9 +62,9 @@
 			</div>
 	</div>
 	<model-viewer
-		class="h-[30rem] w-full bg-transparent"
+		class="h-[25rem] w-full bg-transparent"
 		alt="L"
-		src="https://fbgbrrgtvgretv.000webhostapp.com/drone_home.glb"
+		src="https://bflmpsvz.8u.cz/drone_home.glb"
 		poster=""
 		shadow-intensity="1"
 		camera-controls
@@ -90,7 +90,7 @@
 	</div>
 </section>
 
-<section class="to-white bg-gradient-to-b from-accent via-[#657e90] pb-20">
+<section class="to-white bg-gradient-to-b from-accent via-[#657e90] pb-20 mb-0">
 	<div class="container pt-20">
 		<div class="flex w-full justify-center">
 			<h2 class="font-semibold text-center text-white mb-8">Flytbase</h2>
