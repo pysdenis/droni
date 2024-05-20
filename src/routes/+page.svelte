@@ -39,9 +39,9 @@
 </svelte:head>
 
 <section class="mt-12 mb-20 container">
-	<h1 class="font-semibold text-center mb-10">Revolutionizing Emergency Response with Drones</h1>
+	<h1 class="font-semibold text-center mb-10">Introducing DRON FIRST: The Future of Public Safety</h1>
 	<div class="flex gap-12 flex-col md:grid md:grid-cols-2 items-center">
-		<p class="text-md mt-3 text-justify">Welcome to Skynova! We’re transforming how police, firefighters, and other emergency services respond to crises by providing instant access to drone hangars. Our project, DRON FIRST, is designed to enhance public safety with cutting-edge drone technology.</p>
+		<p class="text-md mt-3 text-justify">Imagine a world where emergency responders can instantly deploy drones to assess and manage critical situations. Skynova makes this a reality. Our DRON FIRST project empowers police, firefighters, and state agencies with cutting-edge drone technology, enhancing their ability to respond quickly and effectively.</p>
 		<!-- svelte-ignore a11y-media-has-caption -->
 		<video
 			playsinline
