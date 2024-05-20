@@ -57,12 +57,14 @@
 <section class="bg-accent mb-0">
 	<div class="container h-56 pt-16">
 		<h2 class="font-semibold text-center text-white mb-8">About Skynova</h2>
-			<div class="flex">
-				<p class="text-md mt-3 text-white text-center">Get ready for a game-changer in emergency services! Our Drone Hangar Access Solution is here to make a big difference for police, firefighters, and other state agencies. It's all about using resources smarter and getting help where it's needed faster.</p>
+			<div class="flex-col">
+				<p class="text-md mt-3 text-white text-center">Skynova is an innovative company transforming the way police, firefighters, and other emergency services respond to crises. Our mission is to provide instant access to drone hangars, significantly enhancing the efficiency and speed of emergency responses.</p>
+				<p class="text-md mt-3 text-white text-center">One of our key initiatives is DRON FIRST, designed to enhance public safety with cutting-edge drone technology. This project enables emergency responders to deploy drones quickly and effectively, which can be crucial in life-and-death situations.</p>
+
 			</div>
 	</div>
 	<model-viewer
-		class="h-[25rem] w-full bg-transparent"
+		class="h-[25rem] w-full bg-transparent mt-20"
 		alt="L"
 		src="https://bflmpsvz.8u.cz/drone_home.glb"
 		poster=""
@@ -108,14 +110,14 @@
 	</div>
 </section>
 
-<section class="bg-white pb-20">
+<section class="bg-white pb-10">
 	<div class="container pt-20">
 		<div class="flex w-full justify-center">
-			<h2 class="font-semibold text-center text-white mb-8">Our Development Journey</h2>
+			<h2 class="font-semibold text-center text-black mb-3">Our Development Journey</h2>
 		</div>
-		<div class="flex">
-			<p>We follow a structured path to ensure success:</p>
-			<ul>
+		<div class="flex flex-col gap-4">
+			<p class="text-center text-lg">We follow a structured path to ensure success:</p>
+			<ol class="text-justify list-decimal">
 				{#each [
 					"Conceptualizing: Planning business models, conducting market research, and laying out the project.",
 					"Parametrization: Defining design parameters, requirements, and labor division.",
@@ -125,13 +127,13 @@
 				] as step}
 					<li>{step}</li>
 				{/each}
-			</ul>
+			</ol>
 		</div>
 	</div>
 </section>
 
 
-<section class="bg-white pb-20">
+<section class="bg-white pb-10">
 	<div class="container pt-20">
 		<div class="flex w-full justify-center">
 			<h2 class="font-semibold text-center mb-8">Join Us</h2>
@@ -143,7 +145,7 @@
 </section>
 
 <section>
-	<div class="container pt-16">
+	<div class="container pt-10">
 		<h2 class="font-semibold text-center text-black mb-8">Contact</h2>
 		<div class="w-full mt-4 flex md:flex-row flex-col gap-4 justify-center	">
 			<!-- svelte-ignore a11y-missing-attribute -->
