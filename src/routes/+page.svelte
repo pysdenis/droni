@@ -9,12 +9,12 @@
 	import mailBox from "$lib/assets/images/email.svg?raw";
 	const texts = [
 		{
-			heading: "Efficient Resource Use",
+			heading: "Efficiency Boost",
 			text: "Maximize the efficiency of public service resources, ensuring they're always ready when needed.",
 			show: false,
 		},
 		{
-			heading: "Faster Response Times",
+			heading: "Rapid Response",
 			text: "Reduce the time from emergency notification to the arrival of first responders, potentially saving lives.",
 			show: false,
 		},
@@ -39,7 +39,7 @@
 </svelte:head>
 
 <section class="mt-12 mb-20 container">
-	<h1 class="font-semibold text-center mb-10">Introducing DRON FIRST: The Future of Public Safety</h1>
+	<h1 class="font-semibold text-center mb-10">The Future of Public Safety</h1>
 	<div class="flex gap-12 flex-col md:grid md:grid-cols-2 items-center">
 		<p class="text-md mt-3 text-justify">Imagine a world where emergency responders can instantly deploy drones to assess and manage critical situations. Skynova makes this a reality. Our DRON FIRST project empowers police, firefighters, and state agencies with cutting-edge drone technology, enhancing their ability to respond quickly and effectively.</p>
 		<!-- svelte-ignore a11y-media-has-caption -->
@@ -65,7 +65,7 @@
 	</div>
 	<model-viewer
 		class="h-[25rem] w-full bg-transparent mt-20"
-		alt="L"
+		alt="A 3D model of our product."
 		src="https://bflmpsvz.8u.cz/drone_home.glb"
 		poster=""
 		shadow-intensity="1"
@@ -117,35 +117,40 @@
 		</div>
 		<div class="flex flex-col gap-4">
 			<p class="text-center text-lg">We follow a structured path to ensure success:</p>
-			<ol class="text-justify list-decimal">
-				{#each [
-					"Conceptualizing: Planning business models, conducting market research, and laying out the project.",
-					"Parametrization: Defining design parameters, requirements, and labor division.",
-					"Design: Creating layout and base models, focusing on user interface and experience.",
-					"First Sales: Introducing our product to early adopters and gaining initial market traction.",
-					"Upgrading: Validating, improving, and scaling our product for broader use."
-				] as step}
-					<li>{step}</li>
-				{/each}
-			</ol>
+			<div class="w-full flex justify-center">
+				<ol class="text-justify md:w-[75%] flex flex-col gap-2 justify-between list-decimal">
+					{#each [
+						"Conceptualizing: Planning business models, conducting market research, and laying out the project.",
+						"Parametrization: Defining design parameters, requirements, and labor division.",
+						"Design: Creating layout and base models, focusing on user interface and experience.",
+						"First Sales: Introducing our product to early adopters and gaining initial market traction.",
+						"Upgrading: Validating, improving, and scaling our product for broader use."
+					] as step}
+						<li>{step}</li>
+					{/each}
+				</ol>
+			</div>
 		</div>
 	</div>
 </section>
 
 
 <section class="bg-white pb-10">
-	<div class="container pt-20">
+	<div class="container">
 		<div class="flex w-full justify-center">
-			<h2 class="font-semibold text-center mb-8">Join Us</h2>
+			<h2 class="font-semibold text-center mb-8">
+				Take the Next Step with Skynova
+			</h2>
 		</div>
-		<div class="flex">
-			<p class="text-md mt-3 text-center mb-3 px-5">At Skynova, we’re at the forefront of drone technology, making emergency responses faster, safer, and more efficient. Discover how we’re changing the future of public safety with our innovative solutions.</p>
+		<div class="flex flex-col justify-center">
+			<p class="text-md mt-3 text-center mb-3 px-5">At Skynova, we’re leading the way in drone technology to make emergency responses faster, safer, and more efficient. Discover how our innovative solutions can revolutionize public safety in your community.</p>
+			<span class="text-md px-5 text-center font-semibold">Ready to transform your emergency response capabilities? Contact us today to learn more and join the future of public safety with Skynova.</span>
 		</div>
 	</div>
 </section>
 
 <section>
-	<div class="container pt-10">
+	<div class="container">
 		<h2 class="font-semibold text-center text-black mb-8">Contact</h2>
 		<div class="w-full mt-4 flex md:flex-row flex-col gap-4 justify-center	">
 			<!-- svelte-ignore a11y-missing-attribute -->
