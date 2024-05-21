@@ -178,15 +178,15 @@
 
 
 <section class="bg-transparent pb-10">
-	<div class="container">
+	<div class="container text-white">
 		<div class="flex w-full justify-center">
-			<h2 class="font-semibold text-center mb-8">
+			<h2 class="font-semibold text-center mb-8 text-white">
 				Product Description and Functionality
 			</h2>
 		</div>
 		<div class="flex flex-col gap-3 justify-center">
 			<div class="text-center flex flex-col gap-3">
-				<p class="text-md mt-3 text-center px-5">
+				<p class="text-md mt-3 text-center px-5 text-white">
 					Our product is an advanced drone station designed for automated operations and integrated with the FlytBase platform. The entire system operates as follows:
 				</p>
 				<ul class="list-disc mx-4 md:mx-0">
