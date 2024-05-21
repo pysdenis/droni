@@ -14,6 +14,7 @@
 		<a href="/">
 			<StaticPicture width={238} height={26} image={logo} loading="eager" alt="Logo of the corporation" class="h-14" />
 		</a>
+		<a href="#contact" class="absolute right-[3%] text-white">Contact us</a>
 	</div>
 	<div id="hero" class="relative">
 		<div class="absolute max-md:max-h-[60dvh] h-[100dvh] w-full overflow-hidden">
