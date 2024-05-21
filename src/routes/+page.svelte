@@ -9,6 +9,8 @@
 	import mailBox from "$lib/assets/images/email.svg?raw";
 	import space from "$lib/assets/images/space.png";
 
+	const toImageUrl = (processedImagePath: string) => `url('${processedImagePath.slice(1).replaceAll('\\', '/')}')`
+
 	const texts = [
 		{
 			heading: "Efficiency Boost",
@@ -177,52 +179,59 @@
 </section>
 
 
-<section class="bg-transparent pb-10">
+<section class="bg-transparent py-10" style="background-image: {toImageUrl(space)}">
 	<div class="container text-white">
 		<div class="flex w-full justify-center">
-			<h2 class="font-semibold text-center mb-8 text-white">
-				Product Description and Functionality
+			<h2 class="font-semibold text-center uppercase mb-3 text-white">
+				How Does It Works?
 			</h2>
 		</div>
 		<div class="flex flex-col gap-3 justify-center">
-			<div class="text-center flex flex-col gap-3">
-				<p class="text-md mt-3 text-center px-5 text-white">
+			<div class="text-center flex flex-col items-center gap-3">
+				<p class="text-md mb-4 text-center px-5 text-white">
 					Our product is an advanced drone station designed for automated operations and integrated with the FlytBase platform. The entire system operates as follows:
 				</p>
-				<ul class="list-disc mx-4 md:mx-0">
-					<span class="font-semibold text-md text-center">Computer Control</span>
-					<div class="text-left">
-						<li>
-							The user sets tasks and schedules for the drones on their computer. These tasks can include various operations such as monitoring, inspection, delivery, and more.
-						</li>
-						<li>
-							The computer sends these instructions to FlytBase using a software interface.
-						</li>
+				<ul class="list-disc md:grid md:grid-cols-2 mb-6 md:gap-10 flex flex-col gap-2 mx-4 md:mx-0 md:w-3/4">
+					<div>
+						<span class="font-semibold text-md text-center">Computer Control</span>
+						<div class="text-left mt-1">
+							<li>
+								The user sets tasks and schedules for the drones on their computer. These tasks can include various operations such as monitoring, inspection, delivery, and more.
+							</li>
+							<li>
+								The computer sends these instructions to FlytBase using a software interface.
+							</li>
+						</div>
 					</div>
+					<div>
 						<span class="font-semibold text-md">FlytBase</span>
-					<div class="text-left">
-						<li>
-							FlytBase, a cloud platform for drone management, receives the instructions from the computer and translates them into specific operations for the station and drones.
-						</li>
+						<div class="text-left mt-1">
+							<li>
+								FlytBase, a cloud platform for drone management, receives the instructions from the computer and translates them into specific operations for the station and drones.
+							</li>
+						</div>
 					</div>
+					<div>
 						<span class="font-semibold text-md">Drone Station</span>
-					<div class="text-left">
-						<li>
-							The drone station, programmed by FlytBase, executes the tasks as per the instructions received. This includes launching, navigating, performing the assigned tasks, and returning to the station.
-						</li>
+						<div class="text-left mt-1">
+							<li>
+								The drone station, programmed by FlytBase, executes the tasks as per the instructions received. This includes launching, navigating, performing the assigned tasks, and returning to the station.
+							</li>
+						</div>
 					</div>
+					<div>
 						<span class="font-semibold text-md">Internet Connectivity via Starlink</span>
-					<div class="text-left">
-						<li>
-							The entire system is connected to the internet using Starlink, ensuring reliable and high-speed connectivity even in remote areas.
-						</li>
-						<li>
-							In case of any issues, we will send a team of professional repair technicians to resolve the problem
-						</li>
+						<div class="text-left mt-1">
+							<li>
+								The entire system is connected to the internet using Starlink, ensuring reliable and high-speed connectivity even in remote areas.
+							</li>
+							<li>
+								In case of any issues, we will send a team of professional repair technicians to resolve the problem
+							</li>
+						</div>
 					</div>
 				</ul>
 			</div>
-			<StaticPicture width={500} height={500} class="w-full left-0 -z-10 absolute" imgClass="w-full" image={space} alt="flytbase" />
 			<span class="text-md px-5 text-center font-semibold">Ready to transform your emergency response capabilities? Contact us today to learn more and join the future of public safety with Skynova.</span>
 		</div>
 	</div>
