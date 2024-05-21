@@ -56,6 +56,47 @@
 	</div>
 </section>
 
+<section class="to-white bg-gradient-to-b from-accent via-[#657e90] pb-20 mb-0">
+	<div class="container pt-20">
+		<div class="flex w-full justify-center flex-col items-center mb-8">
+			<h2 class="font-semibold text-center text-white">
+				Skynova: Versatile Solutions for Every Industry
+			</h2>
+			<span class="text-center text-white text-lg mt-3">Do You Work in Agriculture or Another Sector?</span>
+			<div class="flex">
+				<p class="text-md mt-3 text-white text-center mb-3 px-5">Our cutting-edge drone technology is designed to meet the needs of a wide range of industries. Whether you’re in farming, firefighting, or any other field, Skynova has the right solution for you.</p>
+			</div>
+		</div>
+		<div class="gap-2 flex mt-3 text-center flex-col">
+			<span class="font-semibold mb-3 text-lg">Tailored for Your Industry</span>
+			<div class="grid grid-cols-4 gap-2">
+				<div class="flex flex-col">
+					<span class="font-semibold">Agriculture</span>
+					<span>Optimize crop monitoring and management with aerial insights.</span>
+				</div>
+				<div class="flex flex-col">
+					<span class="font-semibold">Firefighting</span>
+					<span>Enhance emergency response with real-time aerial assessments.</span>
+				</div>
+				<div class="flex flex-col">
+					<span class="font-semibold">Public Safety</span>
+					<span>Improve efficiency and safety for police and rescue operations.</span>
+				</div>
+				<div class="flex flex-col">
+					<span class="font-semibold">And More</span>
+					<span>Whatever your industry, our drone solutions are ready to support your unique needs.</span>
+				</div>
+			</div>
+		</div>
+		<div class="gap-2 my-10 md:!mt-12 items-center text-center text-lg flex flex-col">
+			<span class="font-semibold text-md md:w-2/3">Ready to Transform Your Operations?</span>
+			<div class="flex flex-col md:w-2/3">
+				<span>Explore how Skynova can revolutionize your industry. Contact us today to learn more about our versatile drone solutions.</span>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section class="bg-accent mb-0">
 	<div class="container h-56 pt-16">
 		<h2 class="font-semibold text-center text-white mb-8">About Skynova</h2>
