@@ -7,7 +7,7 @@
 	import phone from "$lib/assets/images/phone.svg?raw";
 	import location from "$lib/assets/images/location.svg?raw";
 	import mailBox from "$lib/assets/images/email.svg?raw";
-	import droneHome from "$lib/assets/images/DroneModel3.png";
+	import space from "$lib/assets/images/space.png";
 
 	const texts = [
 		{
@@ -177,7 +177,7 @@
 </section>
 
 
-<section class="bg-white pb-10">
+<section class="bg-transparent pb-10">
 	<div class="container">
 		<div class="flex w-full justify-center">
 			<h2 class="font-semibold text-center mb-8">
@@ -222,7 +222,7 @@
 					</div>
 				</ul>
 			</div>
-			<StaticPicture width={500} height={500} class="w-full my-4" imgClass="w-full" image={droneHome} alt="flytbase" />
+			<StaticPicture width={500} height={500} class="w-full left-0 -z-10 absolute" imgClass="w-full" image={space} alt="flytbase" />
 			<span class="text-md px-5 text-center font-semibold">Ready to transform your emergency response capabilities? Contact us today to learn more and join the future of public safety with Skynova.</span>
 		</div>
 	</div>
