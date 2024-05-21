@@ -190,7 +190,7 @@
 				<p class="text-md mt-3 text-center px-5">
 					Our product is an advanced drone station designed for automated operations and integrated with the FlytBase platform. The entire system operates as follows:
 				</p>
-				<ul class="list-disc">
+				<ul class="list-disc mx-4 md:mx-0">
 					<span class="font-semibold text-md text-center">Computer Control</span>
 					<div class="text-left">
 						<li>
