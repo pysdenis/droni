@@ -182,11 +182,47 @@
 	<div class="container">
 		<div class="flex w-full justify-center">
 			<h2 class="font-semibold text-center mb-8">
-				Take the Next Step with Skynova
+				Product Description and Functionality
 			</h2>
 		</div>
 		<div class="flex flex-col gap-3 justify-center">
-			<p class="text-md mt-3 text-center px-5">At Skynova, we’re leading the way in drone technology to make emergency responses faster, safer, and more efficient. Discover how our innovative solutions can revolutionize public safety in your community.</p>
+			<div class="text-center flex flex-col gap-3">
+				<p class="text-md mt-3 text-center px-5">
+					Our product is an advanced drone station designed for automated operations and integrated with the FlytBase platform. The entire system operates as follows:
+				</p>
+				<ul class="list-disc">
+					<span class="font-semibold text-md text-center">Computer Control</span>
+					<div class="text-left">
+						<li>
+							The user sets tasks and schedules for the drones on their computer. These tasks can include various operations such as monitoring, inspection, delivery, and more.
+						</li>
+						<li>
+							The computer sends these instructions to FlytBase using a software interface.
+						</li>
+					</div>
+						<span class="font-semibold text-md">FlytBase</span>
+					<div class="text-left">
+						<li>
+							FlytBase, a cloud platform for drone management, receives the instructions from the computer and translates them into specific operations for the station and drones.
+						</li>
+					</div>
+						<span class="font-semibold text-md">Drone Station</span>
+					<div class="text-left">
+						<li>
+							The drone station, programmed by FlytBase, executes the tasks as per the instructions received. This includes launching, navigating, performing the assigned tasks, and returning to the station.
+						</li>
+					</div>
+						<span class="font-semibold text-md">Internet Connectivity via Starlink</span>
+					<div class="text-left">
+						<li>
+							The entire system is connected to the internet using Starlink, ensuring reliable and high-speed connectivity even in remote areas.
+						</li>
+						<li>
+							In case of any issues, we will send a team of professional repair technicians to resolve the problem
+						</li>
+					</div>
+				</ul>
+			</div>
 			<StaticPicture width={500} height={500} class="w-full my-4" imgClass="w-full" image={droneHome} alt="flytbase" />
 			<span class="text-md px-5 text-center font-semibold">Ready to transform your emergency response capabilities? Contact us today to learn more and join the future of public safety with Skynova.</span>
 		</div>
