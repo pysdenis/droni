@@ -100,7 +100,7 @@
 </section>
 
 <section class="bg-accent mb-0">
-	<div class="container h-56 pt-16">
+	<div class="container pt-16">
 		<h2 class="font-semibold text-center text-white mb-8">About Skynova</h2>
 		<div class="flex-col">
 			<p class="text-md mt-3 text-white text-center">Skynova is an innovative company transforming the way police, firefighters, and other emergency services respond to crises. Our mission is to provide instant access to drone hangars, significantly enhancing the efficiency and speed of emergency responses.</p>
@@ -108,7 +108,7 @@
 		</div>
 	</div>
 	<model-viewer
-		class="h-[25rem] w-full bg-transparent mt-20"
+		class="h-[25rem] w-full bg-transparent"
 		alt="A 3D model of our product."
 		src="https://bflmpsvz.8u.cz/drone_home.glb"
 		poster=""
@@ -162,7 +162,7 @@
 		<div class="flex flex-col gap-4">
 			<p class="text-center text-lg">We follow a structured path to ensure success:</p>
 			<div class="w-full flex justify-center">
-				<ol class="text-justify md:w-[75%] flex flex-col gap-2 justify-between list-decimal">
+				<ol class="text-justify md:w-[75%] flex flex-col gap-2 justify-between list-decimal md:grid md:grid-cols-2 mb-6 md:gap-10 mx-4 md:mx-0">
 					{#each [
 						"<span class='font-semibold'>Conceptualizing:</span> Planning business models, conducting market research, and laying out the project.",
 						"<span class='font-semibold'>Parametrization:</span> Defining design parameters, requirements, and labor division.",
