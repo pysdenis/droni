@@ -100,7 +100,7 @@
 </section>
 
 <section class="bg-accent mb-0">
-	<div class="container h-56 pt-16">
+	<div class="container pt-16">
 		<h2 class="font-semibold text-center text-white mb-8">About Skynova</h2>
 		<div class="flex-col">
 			<p class="text-md mt-3 text-white text-center">Skynova is an innovative company transforming the way police, firefighters, and other emergency services respond to crises. Our mission is to provide instant access to drone hangars, significantly enhancing the efficiency and speed of emergency responses.</p>
