@@ -9,7 +9,7 @@
 	import mailBox from "$lib/assets/images/email.svg?raw";
 	import space from "$lib/assets/images/space.png";
 
-	const toImageUrl = (processedImagePath: string) => `url('${processedImagePath.slice(1).replaceAll('\\', '/')}')`
+	const toImageUrl = (processedImagePath: string) => `url('${processedImagePath.slice(0).replaceAll('\\', '/')}')`
 
 	const texts = [
 		{
